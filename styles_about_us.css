@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about-us-seccion-historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1%;
+  padding: 1%;
+  height: 90vh;
+}
+
+.about-us-contenido-historia {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 2px solid orange;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-us-contenido-historia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: transform 0.3s ease;
+}
+
+.text h2 {
+  font-family: "Montserrat";
+  color: orange;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.text {
+  background-color: #1a1a1a;
+  grid-row: 1 / span 2;
+  padding: 5%;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify;
+}
