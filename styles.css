@@ -1,223 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
 
 .momo-signature-regular {
-  font-family: "Momo Signature", cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
-    font-family: Georgia, serif;
-    background-image: url(https://cdn.pixabay.com/photo/2023/09/23/15/56/ai-generated-8271284_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+body {
+  margin: 0;
+  font-family: "Monserrat", sans-serif;
+  /* background-image: url(https://cdn.pixabay.com/photo/2023/09/23/15/56/ai-generated-8271284_1280.jpg); */
+  background-image: url(resourses/resourse_back_burger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-h1{
-    font-family: "Momo Signature";
-    color: white;
-    text-align: center;
-    font-size: 72px;
-    margin-top: 80px;
+h1 {
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+  font-size: 72px;
+  margin-top: 80px;
 }
 
-h2{
-    font-family: "Momo Signature";
-    color: white;
-    text-align: center;
+h2 {
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
 }
 
 /* MENÚ CON LOGO Y NAVEGACIÓN */
 .menu {
-    background-color: orange;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: orange;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .nombre-empresa {
-    font-family: "Momo Signature";
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    font-family: "Momo Signature";
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Montserrat";
 }
 
-.menu li{
-    margin-left: 20px;
+.menu li {
+  margin-left: 20px;
 }
 
-.menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: inline-block;
-    transition: background-color 1s ease, font-weight 1s ease;
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: font-weight 1s ease;
 }
 
 .menu a:hover,
 .menu a.activo {
-    background-color: red;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 40px;
+  background-color: red;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.menu a.link-inicio {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* CONTENIDO PRINCIPAL */
 .contenido {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 15px;
-    color: white;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  color: white;
 }
 
 .contenido p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 /* Galería de hamburguesas en horizontal */
 .galeria-hamburguesas {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin: 30px 0;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .hamburguesa-item {
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
 }
 
 .hamburguesa-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .hamburguesa-item img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .hamburguesa-item p {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* SECCIÓN HISTORIA */
 .seccion-historia {
-    background-color: #1a1a1a;
-    padding: 60px 20px;
+  background-color: #1a1a1a;
+  padding: 60px 20px;
 }
 
 .contenido-historia {
-    max-width: 900px;
-    margin: 0 auto 40px;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    color: white;
-    border: 2px solid orange;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  color: white;
+  border: 2px solid orange;
 }
 
 .contenido-historia h2 {
-    font-family: "Momo Signature";
-    color: orange;
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 25px;
+  font-family: "Montserrat";
+  color: orange;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 25px;
 }
 
 .contenido-historia p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contenido-historia a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: font-weight 0.1s ease;
+}
+
+.contenido-historia a:hover {
+  background-color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 40px;
 }
 
 /* PIE DE PÁGINA */
 .pie-pagina {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 40px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 40px 20px 20px;
 }
 
 .footer-contenido {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
 .footer-seccion {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
 }
 
 .footer-seccion h3 {
-    font-family: "Momo Signature";
-    color: orange;
-    margin-bottom: 15px;
-    font-size: 24px;
+  font-family: "Montserrat";
+  color: orange;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .footer-seccion p {
-    margin: 8px 0;
-    font-size: 14px;
-    line-height: 1.6;
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+.footer-bottom p, a {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
 }
