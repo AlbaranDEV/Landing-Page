@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,25 +20,313 @@
         </a>
         <span class="nombre-empresa">Burger House</span>
       </div>
+      <button class="hamburger" id="hamburger-menu" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
-        <li><a href="index.html" class="activo">Inicio</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about_us.html">¿Quienes somos?</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="activo">Menú</a></li>
+        <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <div class="menu-acciones">
+        <button id="view-cart-btn" class="boton-carrito">Ver carrito (<span id="cart-count">0</span>)</button>
+      </div>
     </nav>
 
     <!---------------------------------------------------------------------------------------->
 
-    <div class="coming_soon">
-      <h2>Coming soon...</h2>
-    </div>
+    <div class="contenido">
+        <h1>Menu</h1>
+        <p>
+          Hemos creado el mejor menú para su exquisito gusto y deleite familiar.
+        </p>
+
+        <h2>Nuestras Especialidades</h2>
+        <h3>Hamburguesas</h3>
+
+        <!-- Contenedor para las imágenes en horizontal -->
+        <div class="galeria-hamburguesas">
+          <div class="hamburguesa-item">
+            <img
+              src="https://unareceta.com/wp-content/uploads/2016/10/hamburguesa.jpg"
+              alt="Burger Clásica"
+            />
+            <p class="parrafo-2">
+              <span>Burger Clásica:</span><br />Hamburguesa con carne jugosa de
+              res, queso cheddar, vegetales frescos y salsas clásicas.<br /><span
+                class="precio"
+                >$38.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.I1Ef7MAvvmZ9jVoaL535qgHaE8?w=730&h=487&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Burger Costilla"
+            />
+            <p class="parrafo-2">
+              <span>Burger Costilla:</span><br />Hamburguesa con costilla
+              desmechada en salsa BBQ, queso fundido y cebolla caramelizada.<br /><span
+                class="precio"
+                >$45.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.M9CYfbtZQQ3rJHXfV2N9XgHaFA?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Smash Burger"
+            />
+            <p class="parrafo-2">
+              <span>Smash Burger:</span><br />Hamburguesa con doble carne
+              sellada al fuego con queso americano, pepinillos y mostaza.<br /><span
+                class="precio"
+                >$43.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/2150270300/es/foto/vegan-burger.jpg?s=612x612&w=0&k=20&c=Nakx1YZxgNgeQ50lmgKKShCg9muwQ_Vh2jcD1Lmic6I="
+              alt="Vegan Burge"
+            />
+            <p class="parrafo-2">
+              <span>Vegan Burger:</span><br />Hamburguesa de base vegetal con
+              brócoli, zanahoria y aguacate – fresca y natural.<br /><span
+                class="precio"
+                >$35.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/1203773894/es/foto/hamburguesa-de-queso-con-queso-suizo-derretido-tomate-de-lechuga-y-cebolla-servido-en-bollo.jpg?s=612x612&w=0&k=20&c=Pu4SH-OvlKc0TrqCPL9hN8EZsYLeDDSjw_q4M8kMbQc="
+              alt="Hamburguesa de queso"
+            />
+            <p class="parrafo-2">
+              <span>Hamburguesa con Queso:</span><br />Hamburguesa con doble
+              proteína, queso triple, tocineta crocante y salsas de la casa.<br /><span
+                class="precio"
+                >$40.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/637790866/es/foto/100-cordero-hamburguesa-griega.jpg?s=612x612&w=0&k=20&c=FAUoUho82QVhEjyRJLpvkiocx4V9c2PlQOVV2V8x8Qk="
+              alt="Hamburguesa griega"
+            />
+            <p class="parrafo-2">
+              <span>Hamburguesa Griega:</span><br />Hamburguesa con 1/2 libra de
+              carne molida 93% magra,queso feta desmenuzado,orégano seco,
+              cebolla roja picada.<br /><span class="precio">$38.000</span>
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/2207030216/es/foto/hamburguesa-de-ternera-con-verduras-y-queso-sobre-fondo-blanco-el-archivo-contiene-el-trazado.jpg?s=612x612&w=0&k=20&c=EmYsVsYU5c0eZ4shZo7SrpCFvFaQYBzfeJkvO8H6BXY="
+              alt="Hamburguesa de ternera"
+            />
+            <p class="parrafo-2">
+              <span>Hamburguesa de Ternera:</span><br />Hamburguesa de 500gr de
+              carne picada de ternera, Huevo,Cebolla pequeña picada y finamente
+              Especias al gusto.<br /><span class="precio">$43.000</span>
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/1217723774/es/foto/hamburguesa-con-champi%C3%B1ones-cebollas-fritas-y-queso.jpg?s=612x612&w=0&k=20&c=woB6jtfsABY8HjhklREGrYSou0B2U7EBtLaO_U_OCDw="
+              alt="Hamburguesa con champiñones"
+            />
+            <p class="parrafo-2">
+              <span>Hamburguesa de champiñones:</span><br />Hamburguesa con
+              400gr de champiñones portobello, cebolleta,harina y Especias al
+              gusto.<br /><span class="precio">$38.000</span>
+            </p>
+          </div>
+
+          <div class="hamburguesa-item">
+            <img
+              src="https://media.istockphoto.com/id/1152247466/es/foto/hamburguesa-cl%C3%A1sica-de-queso-en-un-bollo-de-brioche-con-papas-fritas-y-un-batido.jpg?s=612x612&w=0&k=20&c=gjyXmyKiqgDtghwh6yU_9idqZGki1aieWrHT96DfI44="
+              alt="Hamburguesa clasica de queso"
+            />
+            <p class="parrafo-2">
+              <span>Hamburguesa Clásica de Queso:</span><br />Hamburguesa
+              elaborada con carne 100% vacuno, cubierta con una loncha de queso
+              fundido, pepinillos, kétchup y mostaza.<br /><span class="precio"
+                >$40.000</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <hr class="separador" />
+
+        <h2>Hamburguesas Reinas</h2>
+
+        <div class="galeria-hamburguesasReinas">
+          <div class="hamburguesareina-item">
+            <img
+              src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kPXkBKch/200/200/original?country=co"
+              alt="Club House con carne  "
+            />
+            <p class="parrafo-2">
+              <span>Club house con carne:</span><br />Hamburguesa elaborada con
+              carne de res, tocino, queso (a menudo cheddar o blanco),todo
+              servido en un pan tipo papa o brioche. <br /><span class="precio"
+                >$50.000</span
+              >
+            </p>
+          </div>
+
+          <div class="hamburguesareina-item">
+            <img
+              src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kRX4HhCk/200/200/original?country=co"
+              alt="Club House Pollo Crispy"
+            />
+            <p class="parrafo-2">
+              <span>Club House Pollo Crispy:</span><br />Hamburguesa de pollo
+              rebozado crujiente que se compone de un panecillo de hamburguesa
+              untado con mayonesa relleno con pollo rebozado muy crujiente,
+              tomate y lechuga<br /><span class="precio">$55.000</span>
+            </p>
+          </div>
+
+          <div class="hamburguesareina-item">
+            <img
+              src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kRXPSvCJ/200/200/original?country=co"
+              alt="Crispy Onion Barbecue Pollo"
+            />
+            <p class="parrafo-2">
+              <span>Crispy Onion Barbecue Pollo:</span><br />Hamburguesa de pan
+              artesanal con parmesano + carne de res y cerdo + queso cheddar +
+              doble tocineta + cogollo europeo + aros de cebolla crocantes
+              bañados en reducción balsámica.<br /><span class="precio"
+                >$58.000</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <hr class="separador" />
+
+        <h2>Postres</h2>
+
+        <div class="galeria-postres">
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/helado-de-tempura.webp"
+              alt="helado de tempura"
+            />
+            <p class="parrafo-2">
+              <span>Helado de tempura:</span><br />
+              Contiene: Bola Helado de vainilla, bola Helado de Chocolate, bola
+              Helado de Té Verde.Pastel de Castella o bizcocho
+              normal,Masa,Harina para Repostería.<br /><span class="precio"
+                >$21.000</span
+              >
+            </p>
+          </div>
+
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/bola-magica-de-chocolate.webp"
+              alt="Bola mágica de chocolate"
+            />
+            <p class="parrafo-2">
+              <span>Bola mágica de chocolate:</span><br />
+              Contiene:Chocolate negro Lindt,láminas de pan de oro. Salsa de
+              chocolate con frutos rojos mixtos (como fresas, frambuesas y
+              arándanos picados,bolas de helado de vainilla.<br /><span
+                class="precio"
+                >$24.000</span
+              >
+            </p>
+          </div>
+
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/volcan-de-chocolate.webp"
+              alt="Volcán de chocolate"
+            />
+            <p class="parrafo-2">
+              <span>Volcán de Chocolate:</span><br />Contiene:Chocolate negro de
+              buena calidad, mantequilla sin sal, huevos grandes, azúcar, harina
+              de trigo, Mantequilla y cacao en polvo<br /><span class="precio"
+                >$22.000</span
+              >
+            </p>
+          </div>
+
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/sorbete-de-cereza-con-helado-de-platano.webp"
+              alt="Sorbete de cerezas con helado"
+            />
+            <p class="parrafo-2">
+              <span>Sorbete de cerezas con helado:</span><br />Contiene:Nata
+              para postres, azúcar, bananos, cerezas deshuesadas, yogur
+              natural.<br /><span class="precio">$22.000</span>
+            </p>
+          </div>
+
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/helado-artesanal-de-cheesecake.webp"
+              alt="Helado de cheesecake"
+            />
+            <p class="parrafo-2">
+              <span>Helado de cheesecak:</span><br />Contiene: Galletas tipo
+              Digestive.Mantequilla fundida.Azúcar (para la base).Queso
+              crema.Harina de fuerza.Huevos.<br /><span class="precio"
+                >$23.000</span
+              >
+            </p>
+          </div>
+
+          <div class="postre-item">
+            <img
+              src="https://www.gelatecgroup.com/wp-content/uploads/2024/10/tarta-de-manzana-con-hojaldre-y-helado.webp"
+              alt="Tarta de manzana con hojaldre"
+            />
+            <p class="parrafo-2">
+              <span>Tarta de manzana con hojaldre:</span
+              ><br />Contiene:Manzanas.helados de sabor.leche.huevos.Ralladura
+              de limón.harina de trigo.azúcar.Royal.mantequilla.<br /><span
+                class="precio"
+                >$22.000</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Carrito (modal) -->
+      <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+          <button class="close-cart" id="close-cart">×</button>
+          <h3>Tu carrito</h3>
+          <ul id="cart-items"></ul>
+          <div class="cart-total">Total: <span id="cart-total">$0</span></div>
+          <div class="cart-actions">
+            <button id="checkout-btn" class="checkout-btn">Pagar</button>
+            <button id="clear-cart-btn" class="clear-cart-btn">Vaciar</button>
+          </div>
+        </div>
+      </div>
+    </body>
 
     <!---------------------------------------------------------------------------------------->
 
     <!-- Pie de página -->
     <footer id="contacto" class="pie-pagina">
-      <!-- ← Aquí el cambio -->
       <div class="footer-contenido">
         <div class="footer-seccion">
           <h3>Burger House</h3>
@@ -72,5 +360,6 @@
         <p>&copy; 2025 Burger House. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="functions.js"></script>
   </body>
 </html>
